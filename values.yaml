@@ -1,12 +1,12 @@
 replicaCount: 1
 
 image:
-  repository:
+  repository: "gcr.io/nooks-project/rlt-test:ola" 
   tag:
   pullPolicy: Always
 
 service:
-  type: ClusterIP
+  type: LoadBalancer
   port: 80
 
 ingress:
